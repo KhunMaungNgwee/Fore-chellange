@@ -37,8 +37,12 @@
 
     /* Icon Styles */
     .icon {
-        width: 60px;
-        height: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    width: 100%; /* Ensure it spans the full width */
+}
+    .icon {
         transition: transform 0.2s ease-in-out;
     }
 
@@ -76,15 +80,7 @@
         animation: vibration 0.1s linear infinite;
     }
 
-    /* Centering the Container */
-    .makeCenter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        min-height: 100vh; /* Full viewport height */
-    }
+
 
     /* Image row styles */
     .image-row {
@@ -161,7 +157,7 @@
 <br>
 
     <div class="icon">
-        <img loading="lazy" decoding="async" width="1031" height="668" src="https://fxrg.xyz/wp-content/uploads/2025/02/cx.png" class="elementor-animation-buzz attachment-full size-full wp-image-1683" alt="" srcset="https://fxrg.xyz/wp-content/uploads/2025/02/cx.png 1031w, https://fxrg.xyz/wp-content/uploads/2025/02/cx-300x194.png 300w, https://fxrg.xyz/wp-content/uploads/2025/02/cx-1024x663.png 1024w, https://fxrg.xyz/wp-content/uploads/2025/02/cx-768x498.png 768w" sizes="(max-width: 1031px) 100vw, 1031px">
+        <img loading="lazy" decoding="async"  src="https://fxrg.xyz/wp-content/uploads/2025/02/cx.png" class="elementor-animation-buzz attachment-full size-full wp-image-1683" alt="" srcset="https://fxrg.xyz/wp-content/uploads/2025/02/cx.png 1031w, https://fxrg.xyz/wp-content/uploads/2025/02/cx-300x194.png 300w, https://fxrg.xyz/wp-content/uploads/2025/02/cx-1024x663.png 1024w, https://fxrg.xyz/wp-content/uploads/2025/02/cx-768x498.png 768w" sizes="(max-width: 1031px) 100vw, 1031px">
     </div>
 
   
