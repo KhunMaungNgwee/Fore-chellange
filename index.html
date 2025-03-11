@@ -42,26 +42,7 @@
     align-items: center; /* Center vertically if needed */
     width: 100%; /* Ensure it spans the full width */
 }
-    .icon {
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .icon:hover, .icon:active {
-        animation: vibrate 0.3s infinite;
-    }
-
-    @keyframes vibrate {
-        0% { transform: translate(0, 0); }
-        20% { transform: translate(-2px, 2px); }
-        40% { transform: translate(-2px, -2px); }
-        60% { transform: translate(2px, 2px); }
-        80% { transform: translate(2px, -2px); }
-        100% { transform: translate(0, 0); }
-    }
-
-    .icon {
-        transition: transform 0.5s ease;
-    }
+   
 
     @keyframes spinVertical {
         0% { transform: rotateX(0deg); }
@@ -80,15 +61,15 @@
         animation: vibration 0.1s linear infinite;
     }
 
-
-
     /* Image row styles */
     .image-row {
         display: flex;
         justify-content: center; /* Center the images */
-        gap: 30px; /* Space between the image items */
+        gap: 180px; /* Space between the image items */
         margin-top: 20px;
     }
+
+
 
     .image-item {
         text-align: center; /* Center the text below the image */
@@ -130,6 +111,34 @@
     .icon1:hover {
         transform: scale(0.9); /* Slightly reduce size */
     }
+    .join {
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Removes default padding */
+    text-align: center; /* If you want it centered */
+    font-family: "Schoolbell", sans-serif;
+}
+.navbar-left img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Keeps aspect ratio */
+}
+@keyframes smooth-rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+}
+
+.icon img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.icon img:hover {
+    animation: smooth-rotate 1s infinite ease-in-out; /* Slower and smoother rotation */
+}
+
     </style>
 </head>
 <body>
@@ -169,20 +178,20 @@
     <div class="image-row">
         <div class="image-item">
             <img class="imgs" src="https://fxrg.xyz/wp-content/uploads/2025/02/cz3.png" alt="Image 1">
-            <h3>1,000,000,000 $FXRG</h3>
+            <p class="join">1,000,000,000 $FXRG</p>
         </div>
         <div class="image-item">
             <img class="imgs" src="https://fxrg.xyz/wp-content/uploads/2025/02/cz3.png" alt="Image 2">
-            <h3>0 Buy Tax</h3>
+            <p class="join">0 Buy Tax</p>
         </div>
         <div class="image-item">
             <img class="imgs" src="https://fxrg.xyz/wp-content/uploads/2025/02/cz3.png" alt="Image 3">
-            <h3>0 Sell Tax</h3>
+            <p class="join">0 Sell Tax</p>
         </div>
     </div>
 </div>
 <footer>
-    <h4>JOIN US</h4>
+    <p class="join">JOIN US</p>
     <h4>@ 2025 FHRG</h4>
 </footer>
 
